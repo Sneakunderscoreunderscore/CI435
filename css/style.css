@@ -9,6 +9,9 @@ tfoot {
   color: #fff;
 }
 
+body{
+  background-color: #fff8e0;
+}
 .wrapper{
   max-width: 720px;
   margin: auto;
