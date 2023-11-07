@@ -26,3 +26,15 @@ body{
   background-color: #28d;
   color: black;
 }
+
+p{
+  line-height: 1.1;
+}
+
+article{
+  border: 3px;
+  border-style:groove;
+  border-color: #333;
+  padding: 3px;
+  margin: 3px;
+}
