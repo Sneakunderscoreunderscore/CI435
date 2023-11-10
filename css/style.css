@@ -28,6 +28,9 @@ html{
 }
 .menu ul{
   list-style: none;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .menu li{
   padding: 10px;
@@ -99,6 +102,9 @@ article{
 **/
 
 @media (min-width: 750px) {
+  .menu ul{
+    padding: 10px;
+  }
   .menu li{
     display:grid;
   }
