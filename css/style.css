@@ -89,3 +89,19 @@ article{
 .refs header{
   text-align: center;
 }
+
+/**
+* OVERIDES 
+**/
+
+@media (min-width: 750px) {
+  .wrapper{
+    padding: 10px;
+  }
+  main{
+    width: auto;
+  }
+  image{
+      max-width: auto;
+  }
+}

@@ -17,16 +17,6 @@ footer { grid-area: footer; }
         grid-template-columns: 2fr 4fr;
         grid-template-areas:"banner banner""menu menu""nav main""aside main""footer footer";
     }
-    .menu li{
-        display:inline;
-        list-style-type: none;
-    }
-    .weeks{
-        list-style-type: none;
-    }
-    image{
-        max-width: 500px;
-    }
 }
 
 
@@ -34,15 +24,5 @@ footer { grid-area: footer; }
     .wrapper {
         grid-template-columns: 1.5fr 4fr 1.5fr;
         grid-template-areas:"banner banner banner""menu menu menu""nav main aside""nav main aside""footer footer footer";
-    }
-    .menu li{
-        display:inline;
-        list-style-type: none;
-    }
-    .weeks{
-        list-style-type: none;
-    }
-    image{
-        max-width: 700px;
     }
 }
