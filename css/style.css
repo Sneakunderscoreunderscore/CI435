@@ -26,10 +26,14 @@ html{
 .menu a:hover{
   color: aquamarine;
 }
+.menu ul{
+  list-style: none;
+}
 .menu li{
   padding: 10px;
   background-color:#555;
   margin: 5px;
+  display: inline;
 }
 
 .wrapper{
@@ -95,6 +99,9 @@ article{
 **/
 
 @media (min-width: 750px) {
+  .menu li{
+    display:grid;
+  }
   .wrapper{
     padding: 10px;
   }
