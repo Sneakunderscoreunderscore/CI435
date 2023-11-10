@@ -6,112 +6,124 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/indexgrid.css" rel="stylesheet">
 		<title>Learning Journal</title><!--web page title -->
 	</head>
 
 <body>
 <!--Markup all web page content inside the 'body' tags -->
-	<div class="wrapper">
-	<!--The 'wrapper' contains all the page content-->
-	
-    <header><!--The main heading for the page -->
+		
+    <header class="banner"><!--The main heading for the page -->
 		<h1>Learning Journal</h1>
 	</header>
-	
-    <nav><!--The primary navigation for the page -->    
-		<table class="navigation">
-			<thead>
-		  		<tr>
-					<th colspan="4">Navigation</th>
-			  	</tr>
-			</thead>
-			<thead>
-				<tr>
-				  	<th>pages</th>
-					<th colspan="3">weeks</th>
-				</tr>
-			</thead>
-			<tbody>
-			  	<tr>
-					<td><a href="index.html">Learning Journal</a></td>
-					<td><a href="#week1">Week 1</a></td>
-					<td><a href="#week2">Week 2</a></td>
-					<td><a href="#week3">Week 3</a></td>
-		  		</tr>
-				<tr>
-					<td><a href="tutorial.html">Tutorial</a></td>
-					<td><a href="#week4">Week 4</a></td>
-					<td><a href="#week5">Week 5</a></td>
-					<td><a href="#week6">Week 6</a></td>
-		  		</tr>
-				<tr>
-					<td><a href="contact.html">Contact me</a></td>
-					<td><a href="#week7">Week 7</a></td>
-					<td><a href="#week8">Week 8</a></td>
-					<td><a href="#week9">Week 9</a></td>
-		  		</tr>
-			</tbody>
-		</table>
-	</nav>
 
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Learning Journal</a></li>
+			<li><a href="tutorial.html">Tutorial</a></li>
+			<li><a href="contact.html">Contact me</a></li>
+		</ul>
+
+	</nav>
+	
+	<div class="wrapper"><!--The 'wrapper' contains all the page content (excluding banner and menu)-->
+
+	<div class="navwrap">
+		<nav class="weeks"><!--The primary navigation for the page -->
+			<header>
+				<h2>
+					Navigation
+				</h2>
+			</header>
+			<h3>
+				Weeks
+			</h3>
+			<p><a href="#week1">Week 1</a></p>
+			<p><a href="#week2">Week 2</a></p>
+			<p><a href="#week3">Week 3</a></p>
+			<p><a href="#week4">Week 4</a></p>
+			<p><a href="#week5">Week 5</a></p>
+			<p><a href="#week6">Week 6</a></p>
+			<p><a href="#week7">Week 7</a></p>
+			<p><a href="#week8">Week 8</a></p>
+			<p><a href="#week9">Week 9</a></p> 
+			<h3>
+				Progeressions
+			</h3>
+
+			<p><a href="#w3ss">Week 3 sceenshots</a></p>
+			<p><a href="#w6ss">Week 6 sceenshots</a></p>
+
+		</nav>
+	</div>
+	
     <main><!--The main page content -->
         
         	<h2>Weekly Posts</h2>
 	
     	<article>
 			<header>
-			<h3><a id="week1"></a>Week 1: Intro to programming</h3>
+				<h3>
+					<a id="week1">Week 1: Intro to programming</a>
+				</h3>
 			</header>
-				<p>Week one was a basic intorduction to web development, introducing some of the tags and the web standards.
-					we also learned how to setup a css style sheet for later when we add css to this page<br>
-					&lt;link href="style.css" rel="stylesheet" type="text/css"&gt;</p>
-				<p> Also in week one we setup brighton domains ready to start uploading the progress of our sites.</p>
+
+			<p>Week one was a basic intorduction to web development, introducing some of the tags and the web standards.
+				we also learned how to setup a css style sheet for later when we add css to this page<br>
+				&lt;link href="style.css" rel="stylesheet" type="text/css"&gt;</p>
+			<p> Also in week one we setup brighton domains ready to start uploading the progress of our sites.</p>
 		</article>
 
 		<article>
 			<header>
-			<h3><a id="week2"></a>Week 2: HTML basics</h3>
+				<h3>
+					<a id="week2">Week 2: HTML basics</a>
+				</h3>
 			</header>
-				<p>In this week we started to learn about the basic tags of HTML 5, and what tags are part of old standards. Some examples of tags that were part of those old standards are:</p>
-					<ul>
-						<li>&lt;centre&gt;</li>
-						<li>&lt;u&gt;</li>
-						<li>&lt;font&gt;</li>
-					</ul>
-				<p>All of these have replaced with css formating.
-				</p>
-				<p>
-					We also learned about the different ways some tags work. For example tags like &lt;strong&gt; or &lt;p&gt; need closing tags whereas some tags like &lt;br&gt; or &lt;img&gt; dont need closing. In addition, some elements are block elements, meaning they make a new line, and some are inline elements, meaning they happen within a line.
-				</p>
+
+			<p>In this week we started to learn about the basic tags of HTML 5, and what tags are part of old standards. Some examples of tags that were part of those old standards are:</p>
+				<ul>
+					<li>&lt;centre&gt;</li>
+					<li>&lt;u&gt;</li>
+					<li>&lt;font&gt;</li>
+				</ul>
+			<p>All of these have replaced with css formating.</p>
+			<p>We also learned about the different ways some tags work. For example tags like &lt;strong&gt; or &lt;p&gt; need closing tags whereas some tags like &lt;br&gt; or &lt;img&gt; dont need closing. In addition, some elements are block elements, meaning they make a new line, and some are inline elements, meaning they happen within a line.</p>
+
 		</article>
 
 		<article>
 			<header>
-			<h3><a id="week3"></a>Week 3: Document structure</h3>
+				<h3>
+					<a id="week3">Week 3: Document structure</a>
+				</h3>
 			</header>
-				<p>In week 3 we learned about document structure and why its important.<br>
-				We learned aboult the multitude of stucture tags</p>
-					<ul>
-						<li>&lt;body&gt;</li>
-						<li>&lt;header&gt;</li>
-						<li>&lt;nav&gt;</li>
-						<li>&lt;main&gt;</li>
-						<li>&lt;article&gt;</li>
-						<li>&lt;aside&gt;</li>
-						<li>&lt;footer&gt;</li>
-					</ul>
-					<p>In addition tp these structure tags we leaned about the &lt;div&gt; tag, and how it used to be used like all teh previus structure tags but now is just used to style specific patys of the document, or the whole document as a wrapper with &lt;div id=wrapper&gt;.<br>
-					Nesting is also something we leaned was important with structure tags to make sure the document is compliant with the HTML5 standards.<br>
-					An example of nesting structure tags: <br><img src="media/nesting.png" width="640" alt="an image showing how stucture tags are nested into eachother"></p>
-				<p>Yet another thing we learned about was viewports. These are important to make the websites more accessable on mobile devices by scaling the contont to the screen. This week I added that to this learning Journal using<br>
-				&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
-        
-		</article>
 
+			<p>In week 3 we learned about document structure and why its important.<br>
+			We learned about the multitude of stucture tags</p>
+			<ul>
+				<li>&lt;body&gt;</li>
+				<li>&lt;header&gt;</li>
+				<li>&lt;nav&gt;</li>
+				<li>&lt;main&gt;</li>
+				<li>&lt;article&gt;</li>
+				<li>&lt;aside&gt;</li>
+				<li>&lt;footer&gt;</li>
+			</ul>
+			<p>In addition tp these structure tags we leaned about the &lt;div&gt; tag, and how it used to be used like all teh previus structure tags but now is just used to style specific patys of the document, or the whole document as a wrapper with &lt;div id=wrapper&gt;.<br>
+			Nesting is also something we leaned was important with structure tags to make sure the document is compliant with the HTML5 standards.<br>
+			An example of nesting structure tags: <br><img src="media/nesting.png" width="640" alt="an image showing how stucture tags are nested into eachother"></p>
+			<p>Yet another thing we learned about was viewports. These are important to make the websites more accessable on mobile devices by scaling the contont to the screen. This week I added that to this learning Journal using<br>
+			&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+		</article>
 		<article>
+
 			<header>
-				<h2>Week 3 screenshots</h2>
+				<h2>
+					<a id="w3ss">Week 3 screenshots</a>
+				</h2>
 			</header>
+
 			<p> Now that 3 weeks of the modual have passed, i have taken screenshots of the current state of the site as it stands to keep a record of the progress of the site. Pictured below is the site as of 26 Oct 2023</p>
 			<img src="media/w3ss1.png" width="720" alt="top screenshot of the page after week3"><br>
 			<img src="media/w3ss2.png" width="720" alt="bottom screenshot of the page after week3">
@@ -121,41 +133,58 @@
 
 		<article>
 			<header>
-				<h2><a id="week4"></a>Week 4: CSS</h2>
+				<h2>
+					<a id="week4">Week 4: CSS</a>
+				</h2>
+			</header>
+
+			<p> Week 4 was the intorduction to CSS </p>
+		</article>
+
+		<article>
+			<header>
+				<h2>
+					<a id="week5"></a>Week 5: CSS2</a>
+				</h2>
+			</header>
+
+		</article>
+
+		<article>
+			<header>
+				<h2>
+					<a id="week6">Week 6: responsive web design</a>
+				</h2>
 			</header>
 		</article>
 
 		<article>
 			<header>
-				<h2><a id="week5"></a>Week 5: CSS2</h2>
+				<h2>
+					<a id= "w6ss">Week 6 screenshots</a>
+				</h2>
 			</header>
-
-		</article>
-
-		<article>
-			<header>
-				<h2><a id="week6"></a>Week 6: responsive web design</h2>
-			</header>
-		</article>
-
-		<article>
-			<header>Week 6 screenshots</header>
 
 		</article>
 
     </main><!--Close main page content --> 
-        
-        <aside>
-        
-        	<h2><a id="refs"></a> References</h2>
-            
-            	<ol>
-                	<li><a href="http://validator.w3.org/">W3C markup validation service</a></li>
-                    <li>Mozilla development network web docs for <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-                </ol>
-            
-        </aside>    
- 
+    
+
+	<aside class="refs">
+		<div class="refswrap">
+			<header>
+				<h2>
+					References
+				</h2>
+			</header>
+
+			<ol>
+				<li><a href="http://validator.w3.org/">W3C markup validation service</a></li>
+				<li>MDN web docs for <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">html</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
+			</ol>
+		</div>	
+	</aside>    
+	
   
 	<footer><!--Footer content -->
 		
