@@ -1,0 +1,17 @@
+.banner { grid-area: banner; }
+.menu { grid-area: menu; }
+main { grid-area: main; }
+.refs { grid-area: aside; }
+footer { grid-area: footer; }
+
+.wrapper {
+    display: grid;
+    grid-template-areas:"banner""menu""main""aside""footer";}
+    image{
+        width:auto;
+    }
+
+.wrapper{
+    width: auto;
+    max-width: 420;
+}

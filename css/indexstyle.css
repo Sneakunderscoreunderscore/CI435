@@ -7,10 +7,11 @@ footer { grid-area: footer; }
 
 .wrapper {
     display: grid;
-    grid-template-areas:"banner""menu""nav""main""aside""footer";}
-    image{
-        width:auto;
-    }
+    width: auto;
+    grid-template-areas:"banner""menu""nav""main""aside""footer";
+}
+    
+    
 
 @media (min-width: 750px) {
     .wrapper {

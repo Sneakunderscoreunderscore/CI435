@@ -15,6 +15,10 @@ html{
   padding-bottom: 10px;
 }
 
+/** 
+########## menu ##########
+**/
+
 .menu{
   background-color: #333;
   color: aliceblue;
@@ -24,7 +28,7 @@ html{
   color: white;
 }
 .menu a:hover{
-  color: aquamarine;
+  color: aqua;
 }
 .menu ul{
   list-style: none;
@@ -43,6 +47,10 @@ html{
   background-color:#eee;
   padding: 20px;
 }
+
+/** 
+########## nav menu ##########
+**/
 
 .weeks{
   text-align: center;
@@ -67,6 +75,15 @@ html{
   color: aquamarine;
 }
 
+
+/** 
+########## main articles ##########
+**/
+
+h2{
+  text-align: center;
+}
+
 main{
   border: 3px;
   border-style:groove;
@@ -87,14 +104,14 @@ article{
   margin: 5px;
 }
 
+/** 
+########## references ##########
+**/
+
 .refswrap{
   border: 3px;
   border-style:groove;
   border-color: #333;
-}
-
-.refs header{
-  text-align: center;
 }
 
 /**
@@ -110,11 +127,5 @@ article{
   }
   .wrapper{
     padding: 10px;
-  }
-  main{
-    width: auto;
-  }
-  image{
-      max-width: auto;
   }
 }
