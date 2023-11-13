@@ -129,8 +129,9 @@ article{
   }
   .wrapper{
     padding: 10px;
+    background-color: aquamarine;
   }
   img{
-    width: max-content -40;
+    width: 10;
   }
 }
