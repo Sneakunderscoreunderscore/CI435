@@ -120,7 +120,7 @@ article{
 * OVERIDES 
 **/
 
-@media (min-width: 750px) {
+@media (max-width: 750px) {
   .menu ul{
     padding: 10px;
   }
@@ -129,5 +129,8 @@ article{
   }
   .wrapper{
     padding: 10px;
+  }
+  img{
+    width: 480;
   }
 }
