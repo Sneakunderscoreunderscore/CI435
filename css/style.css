@@ -58,6 +58,7 @@ html{
   border: 3px;
   border-style:groove;
   border-color: #333;
+  margin: 5px;
 }
 
 .weeks p{
@@ -112,6 +113,7 @@ article{
   border: 3px;
   border-style:groove;
   border-color: #333;
+  margin: 5px;
 }
 
 /**
