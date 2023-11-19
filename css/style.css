@@ -134,3 +134,11 @@ article{
     width: 300px;
   }
 }
+
+@media (min-width: 1000px) {
+  .menu li{
+      display: inline-block;
+      width: 200px;
+      padding: 20px;
+  }
+}

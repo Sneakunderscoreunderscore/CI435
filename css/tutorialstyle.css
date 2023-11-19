@@ -1,0 +1,6 @@
+@media (max-width: 750px) {
+    .wrapper{
+        align-content: center;
+        width: 600;
+    }
+}
