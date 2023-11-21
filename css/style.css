@@ -5,6 +5,11 @@ html{
   background-color: #333;
 }
 
+*{
+  border-radius: 10px;
+}
+
+
 .banner{
   background-color: #252525;
   color: aliceblue;
@@ -13,6 +18,7 @@ html{
   margin: 0px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 0px;
 }
 
 /** 
@@ -23,6 +29,7 @@ html{
   background-color: #333;
   color: aliceblue;
   text-align: center;
+  border-radius: 0px;
 }
 .menu a{
   color: white;
@@ -46,6 +53,7 @@ html{
 .wrapper{
   background-color:#eee;
   padding: 20px;
+  border-radius: 0px;
 }
 
 /** 
