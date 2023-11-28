@@ -9,7 +9,35 @@ footer { grid-area: footer; }
     display: grid;
     grid-template-areas:"banner""menu""nav""main""aside""footer";
 }
-    
+
+/** 
+########## nav menu ##########
+**/
+
+.weeks{
+    text-align: center;
+    list-style: none;
+    border: 3px;
+    border-style:groove;
+    border-color: #333;
+    margin: 5px;
+  }
+  
+  .weeks p{
+    padding: 5px;
+    margin: 5px;
+    background-color: #999;
+    border: 3px;
+    border-style:groove;
+    border-color: #333;
+  }
+  .weeks a{
+    color:black;
+  }
+  .weeks a:hover{
+    color: aquamarine;
+  }
+
 @media (min-width: 750px) {
     .wrapper {
         grid-template-columns: 2fr 4fr;

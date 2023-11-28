@@ -58,34 +58,6 @@ html{
   border-radius: 0px;
 }
 
-/** 
-########## nav menu ##########
-**/
-
-.weeks{
-  text-align: center;
-  list-style: none;
-  border: 3px;
-  border-style:groove;
-  border-color: #333;
-  margin: 5px;
-}
-
-.weeks p{
-  padding: 5px;
-  margin: 5px;
-  background-color: #999;
-  border: 3px;
-  border-style:groove;
-  border-color: #333;
-}
-.weeks a{
-  color:black;
-}
-.weeks a:hover{
-  color: aquamarine;
-}
-
 
 /** 
 ########## main articles ##########
@@ -131,7 +103,7 @@ article{
 **/
 
 @media (max-width: 750px) {
-  .menu ul{
+  .menu ul,.menu a{
     padding: 10px;
   }
   .menu li{
