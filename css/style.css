@@ -33,7 +33,9 @@ html{
 }
 .menu a{
   color: white;
+  padding: 20px;
 }
+
 .menu a:hover{
   color: aqua;
 }
