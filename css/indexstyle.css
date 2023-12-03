@@ -47,10 +47,34 @@ footer { grid-area: footer; }
   border-radius: 15px;
   padding: 5px;
   margin: 5px;
+  text-align: center;
 }
+.timetable table{
+  margin: auto;
+  border: 2px solid #333;
+  table-layout: fixed;
+  border-radius: 5px;
+  background-color: #ddd;
+}
+.timetable td {
+  border: 1px solid #333;
+}
+.timetable td:empty{
+  background-color: #999;
+}
+.ttdays, .tttime{
+  color: aliceblue;
+  background-color: black;
+  padding: 10px;
+}
+
 
 /* mobile overide */
 @media (max-width: 750px) {
+  *{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .wrapper {
     display: grid;
     grid-template-areas:"banner""menu""nav""main""aside""footer";
