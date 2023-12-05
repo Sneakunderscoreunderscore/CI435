@@ -47,12 +47,12 @@ h2{
   padding-left: 40px;
   padding-right: 40px;
 }
-.menu li{
+.menu ul li{
   background-color:#555;
   margin: 5px;
   padding: 20px;
   width: 200px;
-  display: inline;
+  display: inline-block;
   border-style: none;
 }
 .menu a {
