@@ -56,7 +56,7 @@ footer { grid-area: footer; }
   margin: auto;
   border: 2px solid #333;
   table-layout: fixed;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #ddd;
 }
 .timetable td {
