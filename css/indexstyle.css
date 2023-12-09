@@ -28,11 +28,14 @@ footer { grid-area: footer; }
 .weeks p{
   padding: 5px;
   margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #999;
   border: 3px;
   border-style:groove;
   border-color: #333;
   border-radius: 10px;
+  max-width: 300px;
 }
 .weeks a{
   color:black;
@@ -70,21 +73,79 @@ footer { grid-area: footer; }
   padding: 10px;
 }
 
-
-/* mobile overide */
-@media (max-width: 750px) {
+/* ultra wide tablet overide */
+@media (max-width: 1200px) {
   *{
     margin-left: auto;
     margin-right: auto;
   }
+  .totop{
+    display: none;
+  }
   .wrapper {
     display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-areas:"banner banner""menu menu""nav timetable""main main""aside aside""footer footer";
+  }
+  .weeks{
+    position: static;
+  }
+  .screenshots{
+    display: none;
+  }
+}
+
+/* tablet overide */
+@media (max-width: 880px) {
+  *{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .totop{
+    display: none;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:"banner""menu""nav""timetable""main""aside""footer";
+  }
+  .weeks{
+    position: static;
+  }
+  .weeks p{
+    display: inline-block;
+    width: 300px;
+  }
+  .screenshots{
+    display: none;
+  }
+}
+
+/* mobile overide */
+@media (max-width: 700px) {
+  *{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .totop{
+    display: none;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas:"banner""menu""nav""main""aside""footer";
   }
   .timetable{
     display: none;
   }
-  .menu li{
-    display: block;
+  .weeks{
+    position: static;
+  }
+  .weeks p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .screenshots{
+    display: none;
   }
 }

@@ -97,9 +97,24 @@ code{
   top: 20px;
 }
 
-/* overides for mobile */ 
+/* ultra wide tablet overide */
+@media (max-width: 1200px) {
+  .menu ul,.menu a{
+    padding: 10px;
+  }
+  .menu li{
+    display:grid;
+  }
+  .wrapper{
+    padding: 5px;
+  }
+  .refs{
+    position: static;
+  }
+}
 
-@media (max-width: 750px) {
+/* tablet overide */
+@media (max-width: 880px) {
   .menu ul,.menu a{
     padding: 10px;
   }
@@ -110,7 +125,27 @@ code{
     padding: 5px;
   }
   img{
-    width: 300px;
+    max-width: 640px;
+  }
+  .refs{
+    position: static;
+  }
+}
+
+/* overides for mobile */ 
+
+@media (max-width: 700px) {
+  .menu ul,.menu a{
+    padding: 10px;
+  }
+  .menu li{
+    display:grid;
+  }
+  .wrapper{
+    padding: 5px;
+  }
+  img{
+    max-width: 300px;
   }
   .refs{
     position: static;
