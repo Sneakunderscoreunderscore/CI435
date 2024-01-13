@@ -17,6 +17,10 @@ main{
     margin: 5px;
     border: none;
     color: aliceblue;
+    border-radius: 10px;
+}
+a:hover{
+    color: aquamarine;
 }
 image{
     width:auto;
