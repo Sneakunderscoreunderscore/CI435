@@ -55,6 +55,7 @@ footer { grid-area: footer; }
   text-align: center;
 }
 .timetable table{
+  border-spacing: 0;
   margin: auto;
   border: 2px solid #333;
   table-layout: fixed;
