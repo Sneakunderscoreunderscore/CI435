@@ -1,0 +1,121 @@
+.banner { grid-area: banner; }
+.menu { grid-area: menu; }
+.weeks { grid-area: nav; }
+main { grid-area: main; }
+.refs { grid-area: aside; }
+footer { grid-area: footer; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 4fr 1.5fr;
+  grid-template-areas:"banner banner banner""menu menu menu""nav main aside""nav main aside""footer footer footer";
+  align-items: start;
+}
+
+/* nav menu */
+
+.weeks{
+  text-align: center;
+  list-style: none;
+  border: 3px;
+  border-style:groove;
+  border-color: #333;
+  margin: 5px;
+  position: sticky;
+  top: 20px;
+}
+.weeks p{
+  padding: 5px;
+  margin: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #999;
+  border: 3px;
+  border-style:groove;
+  border-color: #333;
+  border-radius: 10px;
+  max-width: 300px;
+}
+.weeks a{
+  color:black;
+}
+.weeks a:hover{
+  color: aqua;
+}
+
+/* ultra wide tablet overide */
+@media (max-width: 1200px) {
+  *{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .totop{
+    display: none;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr;
+    grid-template-areas:"banner banner""menu menu""nav nav""main main""aside aside""footer footer";
+  }
+  .weeks{
+    position: static;
+  }
+  .screenshots{
+    display: none;
+  }
+}
+
+/* tablet overide */
+@media (max-width: 880px) {
+  *{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .totop{
+    display: none;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:"banner""menu""nav""main""aside""footer";
+  }
+  .weeks{
+    position: static;
+  }
+  .weeks p{
+    display: inline-block;
+    width: 300px;
+  }
+  .screenshots{
+    display: none;
+  }
+}
+
+/* mobile overide */
+@media (max-width: 700px) {
+  *{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .totop{
+    display: none;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:"banner""menu""nav""main""aside""footer";
+  }
+  .timetable{
+    display: none;
+  }
+  .weeks{
+    position: static;
+  }
+  .weeks p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sspc{
+    display: none;
+  }
+}
