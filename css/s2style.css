@@ -105,9 +105,6 @@ footer { grid-area: footer; }
     grid-template-columns: 1fr;
     grid-template-areas:"banner""menu""nav""main""aside""footer";
   }
-  .timetable{
-    display: none;
-  }
   .weeks{
     position: static;
   }
