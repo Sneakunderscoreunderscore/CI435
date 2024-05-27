@@ -83,10 +83,139 @@
 			<p>Relying on the interpreter automatically inserting semicolons can cause problems with some parts of code where it places it in the wrong position.</p>
 			<h4>In JavaScript, variables can be declared with the keywords <code>var</code>and <code>let</code>. Explain the difference</h4>
 			<p>When a variable is defined with <code>var</code> it has either global scope or local scope when its inside of a function. Using <code>let</code> created a variable with block scope.</p>
-			<h4></h4>
-			<p></p>
-			<h4></h4>
-			<p></p>
+			<h4>every other bit of code</h4>
+			<p>const - value doesn't change<br>
+			console.log() - print something to console<br><br>
+			number/0 = infinity<br>
+			number/string = NaN<br>
+			parseInt(variable); - can be given a base value<br>
+			parseInt("FF",16); - hex to int<br><br>
+			var list = ["a", "b", "c"]<br>
+			console.log(list[1]) // "b" <br>
+			var object{name:"james", age:23};<br>
+			typeof name; <br><br>
+			if(condition){<br>
+			} else if {<br>
+			} else {<br>
+			}<br><br>
+			switch(variable){<br>
+				case 1:<br>
+					break;<br>
+				case 2:<br>
+					break;<br>
+			}<br><br>
+			for(initialise; test; increment){<br>
+			}<br>
+			for(let counter=0; counter&lt;10; counter++) {<br>
+				console.log(counter);<br>
+			}<br><br>
+			for (value of iterable){<br>
+			}<br><br>
+			while(condition){<br>
+			}<br>
+			&gt; greater than<br>
+			&lt; less than<br>
+			&gt;= greater than or equal to<br>
+			&lt;= less that or equal to<br>
+			== equal to <br>
+			!= not equal<br>
+			=== equal to (strict)<br>
+			!== not equal to (strict)<br>
+			== and != allow for equivalent values in different types, for example 0, '0', and False<br>
+			&& logical and<br>
+			|| logical or<br>
+			! logical not<br><br>
+			condition ? expresion1 : expresion2;<br>
+			let isMember = checkMembership(id);<br>
+			let entry_fee = isMember ? '£5.80':'£10.20';<br>
+			console.log(entry_fee);<br><br>
+			`.length` returns the length of the string <br>
+			`.charAt(index)` returns the character at the given index<br>
+			`.indexOf(string, [from])` returns the first occurrence of the given string starting from a given point (if its given)<br>
+			`.toLowerCase()` returns the string in lower case<br>
+			`.toUpperCase()` returns the string in upper case<br>
+			`.trim()` returns the string with white space before and after removed<br>
+			`.substr(index, [length])` returns a string starting from the given index up to a given length (alternatively `.substring` or `.slice`)<br>
+			`.split(separator, [limit])` returns an array of the string split where the given separator occurs with an optional limit (also removes the separator given)<br>
+			`.startsWith(search term, [position])` returns a boolean weather or not the string contains a given term at the start or a given position<br>
+			`.endsWith(search term), [length]` returns a boolean weather or not a sting ends with the given term, searching up to given length or the whole string<br><br>
+			for (let i = 0; i &lt; cost_ary.length; i++)<br>
+			`Array.push()`<br>
+			`Array.pop()`<br>
+			`Array.unshift()` adds elements to the start of the list<br>
+			`Array.shift()` removes elements from the start of the list<br>
+			`Array.splice(index, [delete count], [values])` changes an array removing/replacing elements at a given index<br><br>
+			function ascending(a, b) {<br>
+				return a - b;<br>
+			}<br>
+			Array.sort(ascending);<br><br>
+			`arrayString.split(seperator)` splits a string into an array, splinting at the given separator<br>
+			`Array.join(seperator)` joins an array into a string, placing a given separator between values of the array<br>
+			`Array.map(function)` creates an array with the result of a given function<br>
+			`Array.filter(function)` creates an array with the elements that pass a test in the given function<br>
+			`Array.reduce(function)` applies a function against an accumulator and each element of an array<br><br>
+			`function name ([paramiters]){ [code to execute]}`<br>
+			default values on parameters can be set by defining them when defining the function. for example<br>
+			`function multi_2(x=0, y=1){ ... }`<br>
+			variables defined inside a function have local scope<br><br>
+			document.getElementById({tag id});<br>
+			document.getElementsByTagName({tag name});<br>
+			document.getElementsByClassName({tag class});<br>
+			document.querySelector({selector});<br>
+			document.querySelectorAll({selector});<br>
+			<img src="media/selectors.png"><br>
+			node.parentNode();<br>
+			node.previousSibling();<br>
+			node.nextSibling();<br>
+			node.childNodes();<br>
+			node.firstChild();<br><br>
+			//set a variable with a selector<br>
+			var element = document.querySelector(h1);<br>
+			console.print(element.getAttribute("id"));<br>
+			//to change text content<br>
+			element.textContent = {new value};<br>
+			//to change atributes<br>
+			element.setAttribute({attribute}, {value})<br><br>
+			The DOM can only be accessed after the page is fully loaded<br>
+			window.addEventListener("load", function()<br>
+				{document.querySelector("#target");<br>
+			});	<br>
+			var button = document.querySelector("#button1");<br>
+			button.addEventListener("click", action);<br>
+			<img src="media/events.png"><br>
+			document.querySelector("#item1").style.color = "red";<br>
+			document.querySelector("#item1").classList.add(".err");<br>
+			createElement(tagname)<br>
+			createTextNode(text)<br>
+			appendChild(element)<br>
+			removeChild(element)<br><br>
+			var target = document.querySelector("#target");<br>
+			var p = document.createElement("p");<br>
+			p.textContent = "Web development";<br>
+			p.setAttribute("class", "web");<br>
+			target.appendChild(p);<br><br>
+			var c = document.querySelector("#child2");<br>
+			c.parentNode.removeChild(c);<br>
+			var p = document.querySelector("#parent");<br>
+			while(p.lastChild) {<br>
+			p.removeChild(p.lastChild);<br>
+			}<br><br>
+			var username = document.querySelector("#username").value.trim();<br><br>
+			var course = document.querySelector("#course");<br>
+			var selected = course.options[course.selectedIndex].value; - value on a selection box<br><br>
+			var i, fruits = [], elems = document.querySelectorAll("#fruits input");<br>
+			for(i = 0; i &lt; elems.length; i++) {<br>
+				if(elems[i].checked) {<br>
+					fruits.push(elems[i].value);<br>
+				}<br>
+			} - getting select boxes<br><br>
+			if(elems[i].checked) { - for radio buttons replace the if loop with this<br>
+				fruit = elems[i].value;<br>
+				console.log(fruit);<br>
+				break;<br>
+				}
+			</p>
+			
 		</article>
 
     </main><!--Close main page content --> 
